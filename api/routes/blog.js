@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const newBlog = new Blog({
-        _id: mongoose.Types.ObjectId(),
+        // _id: mongoose.Types.ObjectId(),
         title: req.body.title,
         username: req.body.username,
         body: req.body.body

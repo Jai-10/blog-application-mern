@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const blogSchema = mongoose.Schema({
-        _id: mongoose.Schema.Types.ObjectId,
+const blogSchema = new mongoose.Schema({
+        // _id: mongoose.Schema.Types.ObjectId,
         title: {
             type: String,
             min: 3,
